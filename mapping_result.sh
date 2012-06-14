@@ -74,3 +74,5 @@ perl compileTable.pl -i $outputdir -o $outputdir -f ${suffix}".summary.txt"
 ##rm -f *${data}.summary.txt
 ## normalized the gene read couts
 perl normalized.pl -i $outputdir -o ${outputdir}Normalized_gene.txt
+## log2 transformation
+Rscript log2Genes.R input.txt output.txt

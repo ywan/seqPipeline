@@ -45,7 +45,11 @@ print_help();
 opendir (DIR, $dirname) || die "Error: Cannot open the directory!!!\n";
 
 while($file=readdir(DIR)){
+<<<<<<< HEAD
 if($file =~ /$suffix$/){
+=======
+if($file =~ /^\d{2}.+\.$suffix$/){
+>>>>>>> faa52edfdba666c6d10076dedd0298a32dc9d8f8
   $fullfile=$dirname.$file;
   print "reading $file...\n";
   open FILE, $fullfile || die "Cannot open $file\n";
